@@ -1,0 +1,591 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter";
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+.nav-hero-sections{
+    padding-top: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    height: 700px;
+    width: 100%;
+    background-image: url(Components/Hero\ Section\ Backgroud.png);
+    background-repeat: no-repeat;
+    background-size:cover;
+   
+}
+
+/* Navbar  */
+a{
+    text-decoration: none;
+}
+.home-link{
+    color: #EB662B;
+}
+.login{
+    border: 1px solid #05073C;
+    height: 44px;
+    width: 83.31px;
+    border-radius: 200px;
+}
+.navbar{
+    display: flex;
+    justify-content: space-evenly;
+}
+.links{
+    display: flex;
+    gap: 15px;
+    font-family: sans-serif; 
+    justify-content: space-between;
+}
+
+.links .links-section2{
+    display: flex;
+    align-items: center;
+}
+
+
+/* Hero Section  */
+.hero-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+
+}
+.hero-heading{
+    font-size: 60px;
+    font-weight: 600;
+    font-family: sans-serif;
+    line-height: 72px;
+    background: linear-gradient(90.84deg, #EE8C61 27.01%, #4C43C4 87.3%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+.hero-section .section1{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.hero-section .section2{
+    height: 80px;
+    width: 850px;
+    background-color: #FFFFFF;
+   border-radius: 200px; 
+   display: flex;
+   flex-direction: row;
+   justify-content: space-around;
+
+}
+
+.circle{
+    height: 50px;
+    width: 50px;
+    background-color:#EB662B0D;
+    border-radius: 50%;
+}
+.text1{
+    font-size: 14.88px;
+    line-height: 24px;
+}
+.where, .when, .tour-type, .colored-circle{
+    display: flex;
+    gap: 10px;
+
+}
+.colored-circle{
+    height: 50px;
+    width: 50px;
+    background-color:#EB662B;
+    border-radius: 50%;
+}
+
+
+/* Popular Things Scetion */
+
+.popular-things-section .head{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 830px;
+}
+.popular-things-section .text{
+    font-size: 29.88px;
+    font-weight: 700;
+    line-height: 45px;
+}
+.popular-things-section .link{
+    color:#05073C;
+    
+}
+.images{
+    display: grid;
+    grid-template-areas: 
+    "cruises cruises cruises beach beach city city city" 
+    "cruises cruises cruises museum museum food hiking hiking" ;
+    height: 500px;
+    width: 1320px;
+    grid-gap:0;
+    margin-left: 100px;
+
+}
+.cruises{
+    grid-area: cruises; 
+}
+.beach{
+    grid-area: beach;
+}
+.city{
+    grid-area: city;
+}
+.museum{
+    grid-area: museum;
+}
+.food{
+    grid-area: food;
+}
+.hiking{
+    grid-area: hiking;
+}
+
+.child{
+    position: relative;
+    bottom: 60px;
+    left: 30px;
+    color: #FFFFFF;
+    font-size: 19.53px;
+    font-weight: 500;
+}
+.grid-image-radius{
+    border-radius: 10px;
+}
+
+
+/* Why Choose Section  */
+.why-choose-section .section1{
+    font-size: 29.3px;
+    line-height: 45px;
+    font-weight: 700;
+    padding: 20px;
+}
+.why-choose-section .section2{
+    display: flex;
+    justify-content: space-around;
+    padding: 40px;
+    gap: 50PX;
+}
+.why-choose-section .section21{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.why-choose-section .text1{
+    font-size: 17.72px;
+    font-weight: 500;
+
+}
+.why-choose-section .text2{
+    font-size: 14.88px;
+}
+
+
+
+/* Featured Trips Section  */
+.featured-trips-section-parent{
+    background-color: #EB662B0D;
+    
+}
+.featured-trips-section-header{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 20px;
+}
+
+.featured-trips-section .heading, .trending-destinations-section .heading{
+    font-size: 30px;
+    line-height: 45px;
+    font-weight: 700;
+}
+
+.cards-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 50px;
+    gap: 20px;
+}
+.card{
+    width: 300px;
+    height: 392.59px;
+    border-radius: 12px;
+    border: 1px solid #E7E6E6;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    box-shadow: 0px 10px 40px 0px #0000000D;
+}
+.card-img{
+    border-radius: 12px;
+
+}
+.card-place{
+    font-size: 12.29px;
+    color: #717171;
+    position: relative;
+    left: 42px;
+    font-weight: 500;
+}
+.card-heading{
+    font-size: 15.88px;
+    font-weight: 500;
+    left: 10px;
+}
+.card-rating, .card-days{
+    font-size: 12.49px;
+}
+.card-rating{
+    display: flex;
+    justify-content: center;
+}
+.cost{
+    font-size: 14.5px;
+    font-weight: 500;
+    line-height: 30px;
+}
+.hr{
+    width: 260px;
+    position: relative;
+    left: 20px;
+    color: #717171;
+}
+.card-footer{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/* Trending Destinations Section */
+.trending-destinations-section{
+    background-color: #05073C;
+    padding: 30px 0 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.trending-destinations-cards-section{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+.trending-destinations-box{
+    height: 400px;
+    width: 300px;
+    border-radius: 15px;
+    /* border: 5px solid aliceblue; */
+}
+
+.bali, .roma, .phuket, .paris{
+    background-repeat: no-repeat;
+    background-size:cover;
+
+}
+.bali{
+background-image: url(Components/Bali.jpeg);
+}
+.roma{
+    background-image: url(Components/roma.jpeg);
+}
+.phuket{
+    background-image: url(Components/beach.png);
+}
+.paris{
+    background-image: url(Components/Paris.jpeg);
+}
+/* .tending-img{
+    height: 400px;
+    width: 300px;
+    border-radius: 12px;
+} */
+
+
+.place, .trips{
+
+    color: #FFFFFF;
+    text-align: center;
+    
+}
+.place{
+    font-size: 19.38px;
+    font-weight: 500;
+    position: relative;
+    top: 330px;
+    
+}
+.trips{
+    font-weight: 400;
+    font-size: 13.23px;
+    position: relative;
+    top: 333px;
+}
+
+
+/* Reviews Section  */
+.reviews-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+    color:#05073C;
+    background-color: #FBFBFB;
+    
+}
+.person-images{
+    display: flex;
+    /* justify-content: space-between; */
+    gap: 40px;
+}
+.person1{
+    border: 2px solid #EB662B;
+    border-radius: 95px;
+    padding: 10px;
+}
+.reviews-section .heading{
+    /* color:#05073C; */
+    font-size: 29.53px;
+    font-weight: 700;
+}
+.reviews-section .para{
+    font-size: 19.53px;
+    /* color:#05073C; */
+    font-weight: 500;
+    line-height: 36px;
+    padding: 0 310px 0;
+    text-align: center;
+
+}
+.person-information{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.reviewer-name{
+    font-size: 15.38px;
+    text-align: center;
+    font-weight: 500;
+}
+.reviewer-designation{
+    font-size: 14.41px;
+}
+.reviews-section .footer{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+
+}
+
+
+
+/* Articles Section  */
+.articles-section{
+    color:#05073C;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.articles-section-header{
+    display: flex;
+    /* justify-content: space-between; */
+    gap: 990px;
+}
+.articles-section-heading{
+    font-size: 29.65px;
+    font-weight: 700;
+}
+.acticle-container{
+    display: flex;
+    gap: 30px;
+    /* justify-content: space-evenly; */
+    /* flex-direction: row; */
+    
+}
+.article-image{
+    width: 400px;
+    height: 290px;
+    border-radius: 12px;
+}
+.article-date-section{
+    display: flex;
+    gap: 10px;
+    font-size: 13.89px;
+}
+.article-hr{
+    color:#E7E6E6;
+}
+.article-text1{
+    text-align: left;
+    font-size: 17.3px;
+}
+.article1, .article2, .article3{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+/* Offer Section */
+.offer-section{
+    background-image: url(Components/OfferSectionBackground.png);
+    width: 100%;
+    height: 500px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: space-around;
+    color: #FFFFFF;
+}
+.offer-section-image{
+    width: 650px;
+    height: 490px;
+}
+.offer-section-main{
+    font-size: 39.53px;
+    font-weight: 700;
+}
+.offer-section-sub{
+    font-size: 14.53px;
+    font-weight: 400;
+}
+.magic-link, .information{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.magic-link-text{
+    font-size: 17.58px;
+    line-height: 33.75px;
+}
+.offer-section-info{
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    justify-content: center;
+}
+
+.email-input{
+    height: 60px;
+    width: 350px;
+    border-radius: 12px;
+    border: none;
+}
+.send-btn{
+    height: 60px;
+    width: 133.88px;
+    border-radius: 12px;
+    border: none;
+    color: #4A43C4;
+    cursor: pointer;
+}
+.email-input[placeholder]{
+    padding-left: 10px;
+}
+
+footer{
+    background-color:#05073C;
+    color: #FFFFFF;
+    font-weight: 500;
+    padding: 50px 0 20px;
+}
+
+.footer-section1{
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 1px solid #EB662B26;
+    padding: 30px 0 30px;
+}
+.support-number{
+    font-size: 19.69px;
+    font-weight: 500;
+}
+.follow-us{
+    color: #FFFFFF;
+    font-size: 16.2px;
+}
+.footer-heading{
+    font-size: 19.53px;
+    line-height: 30px;
+}
+.footer-list{
+    font-size: 14.65px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    cursor: pointer;
+}
+.footer-field{
+    position: relative;
+}
+
+.send-btn2{
+    position: absolute;
+    border: none;
+    background: none;
+    height: 60px;
+    width: 80px;
+    border-radius: 12px;
+    color: #05073C;
+    right: 0;
+    cursor: pointer;
+}
+
+
+/* Footer Section  */
+.footer-section2{
+    display: flex;
+    justify-content: space-around;
+    padding: 30px 0 30px;
+    border-bottom:1px solid #EB662B26 ;
+}
+ul{
+    list-style: none;
+}
+.contact, .company, .support, .news-letter, .mobile-apps{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.news-letter-and-Apps{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.email-input1{
+    width: 300px;
+    height: 60px;
+    border: 1px solid #E7E6E6;
+    border-radius: 12px;
+}
+.email-input1[placeholder]{
+    padding-left: 20px;
+}
+
+.footer-section3{
+    display: flex;
+    justify-content: space-around;
+}
+.copyright{
+    font-size: 14.53px;
+}
+.payment-methods{
+    display: flex;
+}
